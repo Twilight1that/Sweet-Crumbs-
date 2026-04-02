@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Sweet Crumbs Bakery</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Sweet Crumbs</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="index.html#reviews">Reviews</a></li>
+                <li><a href="#contact" class="active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/contact-hero.jpg') center/cover no-repeat;">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Contact Us</h1>
+                <p class="tagline">Let's create something beautiful together</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start;">
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <h2>Send us a Message</h2>
+                    <p style="margin-bottom: 30px; color: var(--text-muted);">Whether you have questions about our menu, want to place a custom order, or just want to say hello, we'd love to hear from you.</p>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+91 XXXXX XXXXX">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" name="subject" style="width: 100%; padding: 15px; border: 2px solid rgba(212, 175, 55, 0.3); border-radius: 10px; background: rgba(255, 255, 255, 0.05); color: var(--text-light); font-size: 1rem;">
+                                <option value="">Select a subject</option>
+                                <option value="order">Place an Order</option>
+                                <option value="custom">Custom Order Inquiry</option>
+                                <option value="catering">Catering Services</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Tell us how we can help you..."></textarea>
+                        </div>
+                        <button type="submit" class="cta-button" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Contact Info & Map -->
+                <div>
+                    <div style="margin-bottom: 60px;">
+                        <h2 style="margin-bottom: 30px;">Visit Our Bakery</h2>
+                        <div style="background: var(--secondary-bg); padding: 30px; border-radius: 20px; box-shadow: 0 10px 30px var(--shadow);">
+                            <div style="margin-bottom: 20px;">
+                                <h3 style="color: var(--accent-gold); margin-bottom: 10px;">📍 Location</h3>
+                                <p>123 Luxury Lane<br>Premium District, Mumbai<br>Maharashtra 400001<br>India</p>
+                            </div>
+                            <div style="margin-bottom: 20px;">
+                                <h3 style="color: var(--accent-gold); margin-bottom: 10px;">📞 Phone</h3>
+                                <p>+91 98765 43210</p>
+                            </div>
+                            <div style="margin-bottom: 20px;">
+                                <h3 style="color: var(--accent-gold); margin-bottom: 10px;">✉️ Email</h3>
+                                <p>hello@sweetcrumbs.com</p>
+                            </div>
+                            <div>
+                                <h3 style="color: var(--accent-gold); margin-bottom: 10px;">🕒 Hours</h3>
+                                <p>Monday - Saturday: 7:00 AM - 8:00 PM<br>Sunday: 8:00 AM - 6:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Map -->
+                    <div class="map">
+                        <h2>Find Us</h2>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.5!2d72.8777!3d19.0760!2m3!1f0!2f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c8f0c0c0c0c0%3A0x0!2sSweet%20Crumbs%20Bakery!5e0!3m2!1sen!2sus!4v1616161616161!5m2!1sen!2sus"
+                                width="100%" height="300" style="border:0; border-radius: 20px;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order CTA Section -->
+    <section style="background: linear-gradient(135deg, var(--accent-gold), #f4e87c); color: var(--text-dark); text-align: center;">
+        <div class="container">
+            <h2 style="color: var(--text-dark); margin-bottom: 20px;">Ready to Experience Luxury?</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 40px;">Browse our menu and place your order for pickup or delivery.</p>
+            <a href="menu.html" class="cta-button" style="background: var(--text-dark); color: var(--accent-gold);">View Menu</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Sweet Crumbs</h3>
+                    <p>Luxury artisan bakery crafting exceptional pastries with passion and precision.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li>+91 98765 43210</li>
+                        <li>hello@sweetcrumbs.com</li>
+                        <li>123 Luxury Lane, Mumbai</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="Pinterest">📌</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Sweet Crumbs Bakery. All rights reserved. | Crafted with ❤️</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
